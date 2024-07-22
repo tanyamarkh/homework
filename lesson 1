@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document title</title>
+  </head>
+
+
+
+  <script>
+
+    // 1.Змінні з різними примітивними типамxи даних
+
+    
+let age = 25;             // число
+const name = "John";      // рядок
+var student = true;  // булеве значення
+
+    
+ 
+// 2.Створення двох змінних з числовими значеннями
+var a = 40;
+                var b = 20;
+                var result; 
+                
+                // Додавання (+)
+                result = a + b; 
+                document.write ("40 + 20 = " + result + "<br />");
+                alert ("40 + 20 = " + result);
+
+                // Віднімання (-)
+                result = 40 - 20; 
+                document.write ("40 - 20 = " + result + "<br />");
+                alert ("40 - 20 = " + result);
+        
+                // Множення (*)
+                result = 40 * 20;
+                document.write ("40 * 20 = " + result + "<br />");
+                alert ("40 * 20 = " + result);
+        
+                // Діленя
+                result = a / b;
+                document.write ("40 / 20 = " + result + "<br />");
+                alert ("40 / 20 = " + result);
+
+
+    
+ // 3.Створення змінних з різними примітивними типами даних
+
+    
+ let num = 23;                  // Число
+ document.write (typeof 23); 
+        alert (typeof 2 );
+
+        let str = "Hello, world!"; 
+        document.write (typeof "Hello, world!" );    // Рядок
+        alert (typeof "Hello, world!" );
+
+        let bool = true;            // Булеве значення
+        document.write (typeof true);
+        alert (typeof true);
+
+        let nullVar = null;            // Null
+        document.write (typeof nullVar );  
+        alert (typeof nullVar);
+
+
+        let undef;                     // Undefined
+        document.write (typeof undef );  
+        alert (typeof undef);
+
+      
+        
+        document.write (typeof str );
+        document.write (typeof bool);
+        document.write (typeof nullVar);
+        document.write (typeof undef);
+
+    
+
+        ///4. Завдання на самостійне опрацювання
+
+    
+
+        let myName = "Tanya";
+        let myAge = 30;
+        let doYouLikeProgramming = true;
+        alert("My name : " + myName);
+        alert("MY age: " + myAge);
+        alert("doYouLikeProgramming? " + doYouLikeProgramming);
+
+
+    
+      ///  5. Пріоритетність операторів
+
+
+    
+      let x = 6, y = 14, z = 4;
+
+// 1
+x += y - x++ * z;
+// Послідовність: x++ * z -> y - результат -> x + результат
+
+// 2
+z = --x - y * 5;
+// Послідовність: y * 5 -> --x -> результат - результат
+
+// 3
+y /= x + 5 % z;
+// Послідовність: 5 % z -> x + результат -> y / результат
+
+// 4
+z = x++ + y * 5;
+// Послідовність: y * 5 -> x++ -> результат + результат
+
+// 5
+x = y - x++ * z;
+// Послідовність: x++ * z -> y - результат
+
+
+        
+
+        
+        
+  </script>
+</html>
